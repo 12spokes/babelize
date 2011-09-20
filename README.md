@@ -1,32 +1,16 @@
 # Babelize
 
-A tool for localizing Rails apps.
+A tool for localizing Rails apps.  Edit your translations Google spreadsheets.  Export to YAML or DB.
 
 
 ## Setup
 
-Add babelize to gemfile
+To avoid typing Google username and password each time, create a file CREDS like so:
 
-    gem 'babelize'
-    rails g babelize:install
+    export GOOGLE_USERNAME = 'name@domain.com'
+    export GOOGLE_PASSWORD = 'xxxxxx'
 
-Edit `config/initializers/babelize.rb` like so:
-
-    Babelize.username = 'steve.perkins@12spokes.com'
-    Babelize.password = 'xxxxxxxxx'
-    Babelize.spreadsheet_key = 'yyyyyyyyyyy'
-
-Now run
-
-    rake babelize:init
-
-This will load the translations into the database.
-
-
-## Rake Tasks
-
-    rake babelize:export:yaml
-    rake babelize:export:db
+and run `source CREDS`
 
 
 ## Notes
