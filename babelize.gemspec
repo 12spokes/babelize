@@ -20,4 +20,8 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'google-spreadsheet-ruby', '~> 0.1.5'
   s.add_dependency 'rails-i18n', '~> 0.1.8'
+  s.add_dependency 'multi_json', '~> 1.0.3'
+  s.add_dependency 'highline', '~> 1.6.2'
+  s.add_development_dependency 'rspec', '~> 2.6.0'
+  s.add_development_dependency 'minitest', '~> 2.6.0'
 end
