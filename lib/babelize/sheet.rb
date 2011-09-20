@@ -29,12 +29,12 @@ module Babelize
     end
 
     def header
-      @sheet.rows[0]
+      sheet.rows[0]
     end
 
     def goods
       @goods = {}
-      @sheet.rows.each_with_index do |row, row_num|
+      sheet.rows.each_with_index do |row, row_num|
         next if row_num == 0
         key = row[0]
         row.each_with_index do |col, col_num|
